@@ -14,3 +14,9 @@ function fancyName(obj){
 API.sendChat(bot + ' Adeus,volte sempre @' + obj.username);
 }
 API.on(API.USER_LEFT, fancyName);
+
+
+function fancyName(obj){
+API.getMedia(obj.title);
+API.sendChat(obj.title);
+}
