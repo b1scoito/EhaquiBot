@@ -7,13 +7,13 @@ API.sendChat(botv + " Bot carregado com sucesso!");
 function join(obj){
 API.sendChat('Bem-vindo ao nosso plug! @' + obj.username);
 }
-API.on(API.USER_JOIN, fancyName);
+API.on(API.USER_JOIN, join);
 
 //User left
 function left(obj){
 API.sendChat(bot + ' Adeus,volte sempre @' + obj.username);
 }
-API.on(API.USER_LEFT, fancyName);
+API.on(API.USER_LEFT, left);
 
 
 function media(obj){
