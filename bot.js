@@ -1,5 +1,6 @@
 var bot = "[NedaBot]";
 var botv = "[NedaBot v1.0]";
+var media = API.getMedia();
 
 API.sendChat(botv + " Bot carregado com sucesso!");
 
@@ -15,8 +16,4 @@ API.sendChat(bot + ' Adeus,volte sempre @' + l.username);
 }
 API.on(API.USER_LEFT, left);
 
-
-function media(m){
-API.getMedia(m.title);
-API.sendChat(m.title);
-}
+API.sendChat("Tocando: " + media);
