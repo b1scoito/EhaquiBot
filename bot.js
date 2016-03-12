@@ -14,6 +14,6 @@ API.on(API.USER_JOIN, join);
 function left(l){
 API.sendChat(bot + ' Adeus,volte sempre @' + l.username);
 }
-API.on(API.USER_LEFT, left);
+API.on(API.USER_LEAVE, left);
 
 API.sendChat("Tocando: " + media.author + " - " + media.title);
