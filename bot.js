@@ -25,8 +25,11 @@ while(n == 0){
 }
 
 API.on(API.CHAT, function(data){
-if(data.type === "cookies!" && data.message === "!cookie"){
+var id = data.uid;
+var msg = data.message;
+var role = API.getUser(id).role;
+if(msg.indexOf("!cookie") == 0 && role >=0){
 API.moderateDeleteChat(data.cid);
-API.sendChat("cookies!");
+API.sendChat("cookie!!!!!!!");
 }
 });
