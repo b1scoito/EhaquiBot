@@ -18,7 +18,4 @@ API.on(API.USER_LEAVE, left);
 
 API.on(API.GRAB_UPDATE, callback);
 
-function callback(obj) {
-var media = API.getMedia();
-API.sendChat(obj.user.username + " tocando " + media.author + " - " + media.title);
-}
+API.sendChat("Tocando: " + media.author + " - " + media.title);
