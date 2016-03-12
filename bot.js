@@ -2,8 +2,6 @@ var bot = "[BislachaBot]";
 var botv = "[BislachaBot v1.0]";
 var media = API.getMedia();
 
-if(boton == 0)
-{
 API.sendChat(botv + " Bot carregado com sucesso!");
 
 //User join
@@ -23,7 +21,4 @@ API.on(API.GRAB_UPDATE, callback);
 function callback(obj) {
 var media = API.getMedia();
 API.sendChat(obj.user.username + " tocando " + media.author + " - " + media.title);
-}
-}else{
- API.sendChat("O bot ja está online D:")
 }
