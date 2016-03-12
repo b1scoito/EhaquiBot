@@ -23,3 +23,10 @@ while(n == 0){
   API.sendChat("Tocando: " + media.author + " - " + media.title);
   ++n;
 }
+
+API.on(API.CHAT, function(data){
+if(data.type === "cookies!" && data.message === "!cookie"){
+API.moderateDeleteChat(data.cid);
+API.sendChat("cookies!");
+}
+});
