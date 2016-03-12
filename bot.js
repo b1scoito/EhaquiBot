@@ -6,7 +6,6 @@ if(boton == 0)
 {
 API.sendChat(botv + " Bot carregado com sucesso!");
 
-var boton = 1;
 //User join
 function join(j){
 API.sendChat('Bem-vindo ao nosso plug! @' + j.username);
