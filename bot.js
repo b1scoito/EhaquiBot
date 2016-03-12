@@ -1,7 +1,7 @@
-API.sendChat(botv + " Bot carregado com sucesso!");
-
 var bot = "[NedaBot]";
 var botv = "[NedaBot v1.0]";
+
+API.sendChat(botv + " Bot carregado com sucesso!");
 
 //User join
 function join(obj){
