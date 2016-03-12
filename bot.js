@@ -19,7 +19,12 @@ API.sendChat(bot + ' Adeus,volte sempre @' + l.username);
 }
 API.on(API.USER_LEAVE, left);
 
-API.sendChat("Tocando: " + media.author + " - " + media.title);
+API.on(API.GRAB_UPDATE, callback);
+
+function callback(obj) {
+var media = API.getMedia();
+API.sendChat(obj.user.username + " tocando " + media.author + " - " + media.title);
+}
 }else{
  API.sendChat("O bot ja está online D:")
 }
