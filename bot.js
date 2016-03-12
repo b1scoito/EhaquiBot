@@ -8,16 +8,16 @@ var role = API.getUser(id).role;
 API.sendChat(botv + " Bot carregado com sucesso!");
 
 //User join
-function join(obj){
+function fancyName(obj){
 API.sendChat('Bem-vindo ao nosso plug! @' + obj.username);
 }
-API.on(API.USER_JOIN, join);
+API.on(API.USER_JOIN, fancyName);
 
 //User left
-function left(obj){
+function fancyName(obj){
 API.sendChat(bot + ' Adeus,volte sempre @' + obj.username);
 }
-API.on(API.USER_LEAVE, left);
+API.on(API.USER_LEAVE, fancyName);
 
 API.sendChat("Tocando: " + media.author + " - " + media.title);
 
