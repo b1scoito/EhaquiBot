@@ -4,19 +4,19 @@ var bot = "[NedaBot]";
 var botv = "[NedaBot v1.0]";
 
 //User join
-function fancyName(obj){
+function join(obj){
 API.sendChat('Bem-vindo ao nosso plug! @' + obj.username);
 }
 API.on(API.USER_JOIN, fancyName);
 
 //User left
-function fancyName(obj){
+function left(obj){
 API.sendChat(bot + ' Adeus,volte sempre @' + obj.username);
 }
 API.on(API.USER_LEFT, fancyName);
 
 
-function fancyName(obj){
+function media(obj){
 API.getMedia(obj.title);
 API.sendChat(obj.title);
 }
