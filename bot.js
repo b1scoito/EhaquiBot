@@ -1,5 +1,5 @@
-var bot = "[BislachaBot]";
-var botv = "[BislachaBot v1.0]";
+var bot = "[NedaBot]";
+var botv = "[NedaBot v1.0]";
 var media = API.getMedia();
 var id = data.uid;
 var msg = data.message;
