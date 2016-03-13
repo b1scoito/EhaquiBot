@@ -34,4 +34,7 @@ API.sendChat(bot + "@" + data.un + " you have a cookie");
 if(msg.indexOf("!cake") == 0 && role >=0){
 API.sendChat(bot + "@" + data.un + " the cake is a lie...man...don't belive!");
 }
+if(msg.indexOf("!q-p") == 0 && role >=0){
+API.sendChat(bot + " q-q (VOCÊ) p-p");
+}
 });
