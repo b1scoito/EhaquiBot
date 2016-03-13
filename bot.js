@@ -16,6 +16,6 @@ API.on(API.USER_LEAVE, fancyName);
 
 API.on(API.CHAT_COMMAND, callback);
 
-function callback(value) {
-API.sendChat(value + ' as');
+function callback(as) {
+
 }
