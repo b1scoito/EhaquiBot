@@ -14,8 +14,3 @@ function fancyName(obj){
 API.sendChat(bot + ' Adeus,volte sempre @' + obj.username);
 }
 API.on(API.USER_LEAVE, fancyName);
-
-while(n === 0){
- API.sendChat("tes");
- --n;
-}
