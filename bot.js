@@ -4,15 +4,20 @@ var botv = "[NedaBot v1.5]";
 
 API.sendChat(botv + " Bot carregado com sucesso! : )");
 //User join
-function fancyName(obj){
-API.sendChat(bot + ' Bem-vindo ao nosso plug! @' + obj.username);
+function fancyName(join){
+API.sendChat(bot + ' Bem-vindo ao nosso plug! @' + join.username);
 }
 API.on(API.USER_JOIN, fancyName);
+
+function fancyName(leave){
+API.sendChat(bot + ' Bem-vindo ao nosso plug! @' + leave.username);
+}
+API.on(API.USER_LEAVE, fancyName);
 
 
 API.on(API.HISTORY_UPDATE, callback);
 
-function callback(a){
+function callback(media){
   var media = API.getMedia();
   API.sendChat(bot + "Agora tocando: " + media.author + " - " + media.title);
 }
