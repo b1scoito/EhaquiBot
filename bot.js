@@ -15,5 +15,5 @@ API.on(API.HISTORY_UPDATE, callback);
 
 function callback(a){
   API.sendChat("Tocou: " + media.author + " - " + media.title);
-  var media;
+  media = "";
 }
