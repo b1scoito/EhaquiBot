@@ -18,7 +18,7 @@ API.sendChat(bot + ' Adeus,volte sempre @' + obj.username);
 }
 API.on(API.USER_LEAVE, fancyName);
 
-for(n;n == 1;++n){
+for(n == 1;++n){
   API.sendChat("Tocou: " + media.title);
 }
 if(n == 1) {
