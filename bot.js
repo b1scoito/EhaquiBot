@@ -1,7 +1,7 @@
 var bot = "[NedaBot]";
 var botv = "[NedaBot v1.0]";
 API.sendChat(botv + " Bot carregado com sucesso!");
-var n = 3;
+var n = 0;
 
 //User join
 function fancyName(obj){
@@ -15,7 +15,7 @@ API.sendChat(bot + ' Adeus,volte sempre @' + obj.username);
 }
 API.on(API.USER_LEAVE, fancyName);
 
-while(n > 0){
+while(n === 0){
  API.sendChat("tes");
  --n;
 }
