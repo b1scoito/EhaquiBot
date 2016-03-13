@@ -17,11 +17,4 @@ API.sendChat(bot + ' Adeus,volte sempre @' + obj.username);
 }
 API.on(API.USER_LEAVE, fancyName);
 
-API.on(API.CHAT_COMMAND, callback);
-
-API.on(API.GRAB_UPDATE, callback);
-
-function callback(obj) {
-var media = API.getMedia();
-alert(obj.user.username + " toucou " + media.author + " - " + media.title);
-}
+API.sendChat("Tocando: " + media.author + " - " + media.title);
