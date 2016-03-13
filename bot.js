@@ -1,5 +1,5 @@
 var bot = "[NedaBot]";
-var botv = "[NedaBot v1.0]";
+var botv = "[NedaBot v1.5]";
 
 
 API.sendChat(botv + " Bot carregado com sucesso! : )");
