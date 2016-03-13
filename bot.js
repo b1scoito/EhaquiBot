@@ -22,8 +22,8 @@ API.on(API.CHAT, function(data){
 var id = data.uid;
 var msg = data.message;
 var role = API.getUser(id).role;
-if(msg.indexOf("!commands") == 0 && role >=0){
+if(msg.indexOf("!cookie") == 0 && role >=0){
 API.moderateDeleteChat(data.cid);
-API.sendChat(data.un + " has sent the command!");
+API.chatLog(bot + data.un + " You have a cookie");
 }
 });
