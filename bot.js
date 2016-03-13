@@ -16,5 +16,6 @@ API.on(API.USER_LEAVE, fancyName);
 
 API.on(API.CHAT, function(data){
 if(data.type === "message" && data.message === "!commands"){
+  API.sendChat("oi");
 }
 });
