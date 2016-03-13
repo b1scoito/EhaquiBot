@@ -29,7 +29,9 @@ var msg = data.message;
 var arg = data.message;
 var role = API.getUser(id).role;
 if(msg.indexOf("!cookie") == 0 && role >=0){
-API.moderateDeleteChat("!cookie");
 API.sendChat(bot + "@" + data.un + " you have a cookie");
+}
+if(msg.indexOf("!cake") == 0 && role >=0){
+API.sendChat(bot + "@" + data.un + " the cake is a lie...man...don't belive!");
 }
 });
