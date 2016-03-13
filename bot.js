@@ -14,13 +14,13 @@ API.sendChat(bot + ' Adeus,volte sempre @' + obj.username);
 }
 API.on(API.USER_LEAVE, fancyName);
 
-API.on(API.CHAT, myFunction);
- 
-var u = API.getUsers();
- 
-function myFunction(a){
-if(a.message === '!teste'){
-for(var i in u){
-if(u[i].id === a.uid){
-  API.sendChat("oiawdwa");
-}}}}
+API.on(API.CHAT, function(data){
+var id = data.uid;
+var msg = data.message;
+var role = API.getUser(id).role;
+/* method what i use to see emote,message etc. content*/
+if(msg.indexOf("!commands") == 0 && role >=0){
+API.moderateDeleteChat(data.cid);
+API.sendChat(data.un+" has sent the command!");
+}
+});
