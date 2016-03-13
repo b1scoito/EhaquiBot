@@ -17,12 +17,13 @@ API.on(API.USER_LEAVE, fancyName);
 
 API.sendChat("Tocou: " + media.title);
 
-API.on(API.CHAT, function(data){
+function name(data) {
 var id = data.uid;
 var msg = data.message;
+var username = data.un;
 var role = API.getUser(id).role;
-if(msg.indexOf("!teste") == 0 && role >=0){
+if(msg.indexOf("!commands") == 0 && role >=0) {
 API.moderateDeleteChat(data.cid);
-API.sendChat(data.un+" has sent the command!");
-}
-});
+API.sendChat(username +" has sent the command!");
+}}
+API.on(API.CHAT, name);
