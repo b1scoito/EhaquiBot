@@ -5,6 +5,6 @@ var n = 0;
 
 //User join
 function fancyName(obj){
-API.sendChat('Bem-vindo ao nosso plug! @' + obj.username);
+API.sendChat(bot + 'Bem-vindo ao nosso plug! @' + obj.username);
 }
 API.on(API.USER_JOIN, fancyName);
