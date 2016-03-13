@@ -3,9 +3,7 @@ var botv = "[NedaBot v1.0]";
 var media = API.getMedia();
 
 
-API.sendChat(botv + " Bot carregado com sucesso!");
-API.sendChat("Tocando: " + media.author + " - " + media.title);
-
+API.sendChat(botv + " Bot carregado com sucesso! : )");
 //User join
 function fancyName(obj){
 API.sendChat(bot + ' Bem-vindo ao nosso plug! @' + obj.username);
