@@ -27,9 +27,4 @@ if(msg.indexOf("!cookie") == 0 && role >=0){
 API.moderateDeleteChat("!cookie");
 API.sendChat(bot + "@" + data.un + " you have a cookie");
 }
-if(msg.indexOf("!skip") == 0 && role >=0){
-API.moderateDeleteChat("!skip");
-API.sendChat(bot + " " + media.title + " Foi pulado");
-API.moderateForceSkip();
-}
 });
