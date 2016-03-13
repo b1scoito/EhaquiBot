@@ -24,6 +24,6 @@ var msg = data.message;
 var role = API.getUser(id).role;
 if(msg.indexOf("!cookie") == 0 && role >=0){
 API.moderateDeleteChat(data.cid);
-API.chatLog(bot + data.un + " You have a cookie");
+API.sendChat(bot + data.un + " You have a cookie");
 }
 });
