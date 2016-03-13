@@ -2,7 +2,7 @@ var bot = "[NedaBot]";
 var botv = "[NedaBot v1.0]";
 var nmedia = API.getNextMedia();
 var media = API.getMedia();
-var songt = API.getTimeRemaining();
+var songt = API.getTimeElapsed();
 var n = 3;
 
 API.sendChat(botv + " Bot carregado com sucesso!");
