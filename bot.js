@@ -14,5 +14,5 @@ API.on(API.HISTORY_UPDATE, callback);
 
 function callback(a){
   var media = API.getMedia();
-  API.sendChat("Agora tocando: " + media.author + " - " + media.title);
+  API.sendChat(bot + "Agora tocando: " + media.author + " - " + media.title);
 }
