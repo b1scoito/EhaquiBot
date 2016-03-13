@@ -14,8 +14,8 @@ API.sendChat(bot + ' Adeus,volte sempre @' + obj.username);
 }
 API.on(API.USER_LEAVE, fancyName);
 
-
-function fancyName(obj){
-  API.dendChat("foi?")
+API.on(API.CHAT, function(data){
+if(data.type === "message" && data.message === "!commands"){
+API.moderateDeleteChat(data.cid);
 }
-API.on(API.sendChat("!teste"), fancyName);
+});
