@@ -1,9 +1,8 @@
 var bot = "[NedaBot]";
 var botv = "[NedaBot v1.0]";
 var nmedia = API.getNextMedia();
-var media = API.getMedia();
 var songt = API.getTimeElapsed();
-var n = 3;
+var n = 0;
 
 API.sendChat(botv + " Bot carregado com sucesso!");
 
@@ -18,11 +17,7 @@ function fancyName(obj){
 API.sendChat(bot + ' Adeus,volte sempre @' + obj.username);
 }
 API.on(API.USER_LEAVE, fancyName);
-
-while(n > 1){
-API.sendChat(songt);
---n;
 }
-if(songt >=2){
-  API.sendChat("Tocando: " + media.author + " - " + media.title);
+while(songt > n){
+  API.sendChat("Tocando: " + nmedia.author + " - " + nmedia.title);
 }
