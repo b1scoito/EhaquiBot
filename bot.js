@@ -14,8 +14,13 @@ API.sendChat(bot + ' Adeus,volte sempre @' + obj.username);
 }
 API.on(API.USER_LEAVE, fancyName);
 
-API.on(API.CHAT, function(data){
-if(data.type === "message" && data.message === "!commands"){
-  API.sendChat("oi");
-}
-});
+API.on(API.CHAT, myFunction);
+ 
+var u = API.getUsers();
+ 
+function myFunction(a){
+if(a.message === '!teste'){
+for(var i in u){
+if(u[i].id === a.uid){
+  API.sendChat("oiawdwa");
+}}}}
