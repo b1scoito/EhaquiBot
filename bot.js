@@ -23,7 +23,6 @@ var msg = data.message;
 var username = data.un;
 var role = API.getUser(id).role;
 if(msg.indexOf("!commands") == 0 && role >=0) {
-API.moderateDeleteChat(data.cid);
-API.sendChat(username +" has sent the command!");
+API.sendChat(username + " has sent the command!");
 }}
 API.on(API.CHAT, name);
