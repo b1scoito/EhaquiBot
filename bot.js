@@ -4,7 +4,7 @@ API.sendChat(botv + " Bot carregado com sucesso!");
 var n = 0;
 
 //User join
-function fancyName2(obj2){
-API.sendChat('Bem-vindo ao nosso plug! @' + obj2.username);
+function fancyName(obj){
+API.sendChat('Bem-vindo ao nosso plug! @' + obj.username);
 }
-API.on(API.USER_JOIN, fancyName2);
+API.on(API.USER_JOIN, fancyName);
