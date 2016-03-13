@@ -19,6 +19,9 @@ API.on(API.USER_LEAVE, fancyName);
 
 API.on(API.CHAT_COMMAND, callback);
 
-function callback(boom) {
-API.sendChat(boom + ' boom');
+API.on(API.GRAB_UPDATE, callback);
+
+function callback(obj) {
+var media = API.getMedia();
+alert(obj.user.username + " toucou " + media.author + " - " + media.title);
 }
