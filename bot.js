@@ -17,5 +17,5 @@ API.on(API.USER_LEAVE, fancyName);
 
 while(n > 0){
  API.sendChat("tes");
- --n
+ --n;
 }
