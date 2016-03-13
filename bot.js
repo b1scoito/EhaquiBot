@@ -27,8 +27,4 @@ if(msg.indexOf("!cookie") == 0 && role >=0){
 API.moderateDeleteChat(data.cid);
 API.sendChat(bot + "@" + data.un + " you have a cookie");
 }
-if(msg.indexOf("!surdo") == 0 && role >=0){
-API.moderateDeleteChat(data.cid);
-API.setVolume(100);
-}
 });
