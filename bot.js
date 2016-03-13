@@ -1,8 +1,10 @@
 var bot = "[NedaBot]";
 var botv = "[NedaBot v1.0]";
+var media = API.getMedia();
 
 
 API.sendChat(botv + " Bot carregado com sucesso!");
+API.sendChat("Tocando: " + media.author + " - " + media.title);
 
 //User join
 function fancyName(obj){
