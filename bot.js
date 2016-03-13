@@ -14,5 +14,5 @@ API.on(API.USER_JOIN, fancyName);
 API.on(API.HISTORY_UPDATE, callback);
 
 function callback(a){
-  API.sendChat("Tocando: " + media.author + " - " + media.title);
+  API.sendChat("Tocou: " + media.author + " - " + media.title);
 }
