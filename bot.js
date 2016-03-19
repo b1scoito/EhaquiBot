@@ -1,5 +1,5 @@
-var bot = "[NedaBot]";
-var botv = "[NedaBot v1.5]";
+var bot = "[Wata'sBot]";
+var botv = "[Wata'sBot v1.5]";
 
 
 API.sendChat(botv + " Bot carregado com sucesso! : )");
@@ -36,11 +36,5 @@ API.sendChat(bot + "@" + data.un + " the cake is a lie...man...don't belive!");
 }
 if(msg.indexOf("!q-p") == 0 && role >=0){
 API.sendChat(bot + " q-q (VOCÊ) p-p");
-}
-if(msg.indexOf("!help") == 0 && role >=0){
-API.sendChat("[!help] -> Isso aqui que tu ta vendo");
-API.sendChat("[!q-p] -> Teu grupo aew parça");
-API.sendChat("[!cake] -> Referencia a portal..(spoiler ;-;)");
-API.sendChat("[!cookie] -> Referencia a G0uloarte e-e");
 }
 });
