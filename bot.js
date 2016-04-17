@@ -1,5 +1,5 @@
-var bot = "[Wata'sBot]";
-var botv = "[Wata'sBot v1.5]";
+var bot = "[teste bot]";
+var botv = "[teste 0]";
 
 
 API.sendChat(botv + " Bot carregado com sucesso! : )");
