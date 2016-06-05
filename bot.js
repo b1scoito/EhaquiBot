@@ -1,1 +1,1 @@
-API.sendChat(Bot msg teste 0.1)
+API.sendChat('Bot msg teste 0.1')
