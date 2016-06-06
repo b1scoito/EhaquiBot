@@ -28,7 +28,7 @@ function commands(cmd){
   var role = API.getUser(id).role;
   if(msg.IndexOf("!Bot")==0 && role>=0){
     /*API.moderateDeleteChat(data.cid);*/
-    API.on(API.sendChat(vbot + " Bot Criado por: GamerBolachaBR!"));
+    API.sendChat(vbot + " Bot Criado por: GamerBolachaBR!");
   }
   
 }
