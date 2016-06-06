@@ -2,7 +2,7 @@ start = 1
 bot = "[RAWR Bot's]"
 vbot = "[RAWR Bot's v1.0]"
 Author = "GamerBolachaBR"
-if start===1 {
+if start==1 {
   API.sendChat(vbot + "Bot iniciado com sucesso!");
   
   
