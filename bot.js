@@ -15,3 +15,8 @@ API.on(API.USER_LEAVE, lvusr)
 function lvusr(userleave){
   API.sendChat(bot + "O usuario:" +  userleave.username + " Deixou a sala!")
 }
+
+API.on(API.USER_JOIN, jnusr)
+function jnusr(userjoin){
+  API.sendChat(bot + "Bem-vindo(a) " + userjoin.username)
+}
