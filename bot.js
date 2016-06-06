@@ -10,3 +10,8 @@ function msc(music){
 var media = API.getMedia();
 API.sendChat(bot + "Tocando:" + media.author + " - " + media.title)
 }
+
+API.on(API.USER_LEAVE, lvusr)
+function lvusr(userleave){
+  API.sendChat(bot + "O usuario:" +  userleave.username + " Deixou a sala!")
+}
