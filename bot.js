@@ -6,7 +6,7 @@ API.sendChat(vbot + "Bot iniciado com sucesso!")
 
 
 API.on(API.HISTORY_UPDATE, msc)
-function msc(obj){
+function msc(music){
 var media = API.getMedia();
 API.sendChat(bot + "Tocando:" + media.author + " - " + media.title)
 }
