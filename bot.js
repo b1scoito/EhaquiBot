@@ -26,7 +26,7 @@ var id = cmd.uid;
 var msg = cmd.message;
 var role = API.getUser(id).role;
 if(msg.indexOf("!Bot") == 0 && role >=0){
-API.moderateDeleteChat(data.cid);
+API.moderateDeleteChat(cmd.cid);
 API.sendChat(vbot+" Bot criado por GamerBolachaBR!");
 }
 });
