@@ -21,15 +21,12 @@ function jnusr(userjoin){
   API.sendChat(bot + " Bem-vindo(a) " + userjoin.username)
 }
 
-function commands(cmd){
-  var id = cmd.uid;
-  var msg = cmd.message;
-  var user = cmd.un;
-  var role = API.getUser(id).role;
-  if(msg.IndexOf("!Bot")==0 && role>=0){
-    API.moderateDeleteChat(data.cid);
-    API.sendChat(vbot + " Bot Criado por: GamerBolachaBR!");
-  }
-  
+API.on(API.CHAT, function(cmd){
+var id = cmd.uid;
+var msg = cmd.message;
+var role = API.getUser(id).role;
+if(msg.indexOf("!Bot") == 0 && role >=0){
+API.moderateDeleteChat(data.cid);
+API.sendChat(vbot+" Bot criado por GamerBolachaBR!");
 }
-API.on(API.CHAT, commands);
+});
