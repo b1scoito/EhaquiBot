@@ -21,12 +21,14 @@ function jnusr(userjoin){
   API.sendChat(bot + " Bem-vindo(a) " + userjoin.username)
 }
 
-API.on(API.CHAT, function(cmd){
-var id = cmd.uid;
-var msg = cmd.message;
+function name(data) {
+var id = data.uid;
+var msg = data.message;
+var username = data.un;
 var role = API.getUser(id).role;
-if(msg.indexOf("!Bot") == 0 && role >=0){
-API.moderateDeleteChat(cmd.cid);
-API.sendChat(vbot+" Bot criado por GamerBolachaBR!");
-}
-});
+/* method what i use to see emote,message etc. content*/
+if(msg.indexOf("!commands") == 0 && role >=0) {
+API.moderateDeleteChat(data.cid);
+API.sendChat(username +" has sent the command!");
+}}
+API.on(API.CHAT, name);
