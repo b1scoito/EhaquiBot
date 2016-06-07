@@ -23,7 +23,7 @@ function commands(cmd) {
   var id=cmd.uid;
   var msg=cmd.message;
   var perm=API.getUser(id).role;
-  if(cmd.type=="!bot" && perm >= 0){
+  if(msg=="!bot" && perm >= 0){
     API.sendChat("teste command!")
   }
 }
