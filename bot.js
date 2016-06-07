@@ -31,7 +31,7 @@ API.on(API.CHAT, function(cmd) {
   }
   if(msg=="!ban"){
     if(perm>=0){
-    var name = msg.substring(cmd.length+2)
+    var name = msg.substring(cmd.length + 2);
     API.sendChat(name)
     }
   }
