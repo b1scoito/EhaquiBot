@@ -25,6 +25,6 @@ API.on(API.CHAT, function(cmd) {
   var msg=cmd.message;
   var perm=API.getUser(id).role;
   if(msg=="!bot" && perm >= 0){
-    API.sendChat(bot + " Bot criado por " + author + " Verssão: " + ver)
+    API.sendChat(bot + " Criado por " + Author + " Verssão: " + ver)
   }
 })
