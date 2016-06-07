@@ -19,12 +19,11 @@ function jnusr(userjoin){
   API.sendChat(bot + " Bem-vindo(a) " + userjoin.username)
 }
 
-API.on(API.CHAT, commands)
-function commands(cmd) {
+API.on(API.CHAT, function(cmd) {
   var id=cmd.uid;
   var msg=cmd.message;
   var perm=API.getUser(id).role;
-  if(msg.indexOf("!bot")==0 && perm >= 0){
+  if(msg=="!bot" && perm >= 0){
     API.sendChat("teste command!")
   }
-}
+})
