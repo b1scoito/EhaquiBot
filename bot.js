@@ -23,8 +23,10 @@ API.on(API.CHAT, function(cmd) {
   var id=cmd.uid;
   var msg=cmd.message;
   var perm=API.getUser(id).role;
-  if(msg=="!bot" && perm >= 0){
+  if(msg=="!bot"){
     API.moderateDeleteChat(cmd.cid);
+    if(perm >= 0){
     API.sendChat(vbot + " Bot criado por GamerBolachaBR")
+    }
   }
 })
