@@ -29,7 +29,7 @@ function(cmd) {
     for(var i=0; i < 10; i++){
       if(i==9){
     API.sendChat(vbot + " Bot criado por GamerBolachaBR")
-    i=0;
+    return i;
       }
     }
   }
