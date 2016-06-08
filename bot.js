@@ -31,7 +31,14 @@ API.on(API.CHAT, function(cmd) {
   }
   if(msg=="!ban"){
     if(perm>=0){
+    function (id) {
+      for (var i = 0; i < users.length; i++) {
+       if (users[i].id === id) {
+        return users[i];
+        }
+      }
     var name = msg.substring(cmd.length + 2);
+    var user = lookupUserName(name);
     API.sendChat(name)
     }
   }
