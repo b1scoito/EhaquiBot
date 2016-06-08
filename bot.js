@@ -19,7 +19,8 @@ function jnusr(userjoin){
   API.sendChat(bot + " Bem-vindo(a) " + userjoin.username)
 }
 
-API.on(API.CHAT, function(cmd) {
+API.on(API.CHAT, 
+function(cmd) {
   var id=cmd.uid;
   var msg=cmd.message;
   var perm=API.getUser(id).role;
@@ -29,17 +30,5 @@ API.on(API.CHAT, function(cmd) {
     API.sendChat(vbot + " Bot criado por GamerBolachaBR")
     }
   }
-  if(msg=="!ban"){
-    if(perm>=0){
-    function (id) {
-      for (var i = 0; i < users.length; i++) {
-       if (users[i].id === id) {
-        return users[i];
-        }
-      }
-    var name = msg.substring(cmd.length + 2);
-    var user = lookupUserName(name);
-    API.sendChat(name)
-    }
-  }
-})
+}
+)
