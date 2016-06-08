@@ -30,7 +30,7 @@ function(cmd) {
     API.sendChat(i)
       if(i===10){
     API.sendChat(vbot + " Bot criado por GamerBolachaBR")
-    var i=0;
+    return i;
       }
     }
   }
