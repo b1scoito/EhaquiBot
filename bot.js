@@ -24,7 +24,7 @@ function(cmd) {
   var id=cmd.uid;
   var msg=cmd.message;
   var perm=API.getUser(id).role;
-  if(msg==="!bot"){
+  if(msg=="!bot"){
     API.moderateDeleteChat(cmd.cid);
     for(var i=0; i == 10; i++){
     API.sendChat(i)
