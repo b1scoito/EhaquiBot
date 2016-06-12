@@ -27,5 +27,8 @@ function(cmd) {
   if(msg=="!bot"){
     API.sendChat(vbot + " Bot criado por GamerBolachaBR")
   }
+  if(msg=="!stg"){
+    API.sendChat(bot + " STG, Song To Going!") 
+  }
 }
 )
