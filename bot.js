@@ -19,12 +19,12 @@ function jnusr(userjoin){
   API.sendChat(bot + " Bem-vindo(a) " + userjoin.username)
 }
 
-for(var i=0;i < 1000000000; i++){
-  var sngtmr = API.getTimeRemaining();
+API.on(API.HISTORY_UPDATE, song)
+function song(songtmr){
+  var sngtmr = API.getTimeRemaining()
   if sngtmr >= 7 {
     API.sendChat(bot + " Sua musica é muito grande")
     API.moderateForceSkip()
-    i=i-100000
   }
 }
 
