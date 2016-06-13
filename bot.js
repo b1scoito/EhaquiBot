@@ -19,6 +19,15 @@ function jnusr(userjoin){
   API.sendChat(bot + " Bem-vindo(a) " + userjoin.username)
 }
 
+API.on(API.HISTORY_UPDATE, sngtr)
+function sngtr(songtime){
+  var sngtmr = API.getTimeRemaining();
+  if sngtmr >= 7 {
+    API.sendChat(bot + " Sua musica é muito grande")
+    API.moderateForceSkip()
+  }
+}
+
 API.on(API.CHAT, 
 function(cmd) {
   var id=cmd.uid;
