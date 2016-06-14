@@ -14,19 +14,10 @@ function lvusr(userleave){
   API.sendChat(bot + " O usuario:" +  userleave.username + " Deixou a sala!")
 }
 
-API.on(API.USER_JOIN, jnusr)
-function jnusr(userjoin){
+API.on(API.USER_JOIN,function(userjoin){
   API.sendChat(bot + " Bem-vindo(a) " + userjoin.username)
 }
-
-API.on(API.HISTORY_UPDATE, song)
-function song(songtmr){
-  var sngtmr = API.getTimeRemaining()
-  if sngtmr >= 7 {
-    API.sendChat(bot + " Sua musica é muito grande")
-    API.moderateForceSkip()
-  }
-}
+)
 
 API.on(API.CHAT, 
 function(cmd) {
@@ -38,6 +29,14 @@ function(cmd) {
   }
   if(msg=="!stg"){
     API.sendChat(bot + " STG, Song To Going!") 
+  }
+  if(msg=="!skip"){
+    if(perm >= 2){
+      API.sendChat(bot + " Sua musica foi pulada!")
+      API.moderateForceSkip();
+    }else{
+      API.sendChat(bot + " Permissão insuficiente!")
+    }
   }
 }
 )
