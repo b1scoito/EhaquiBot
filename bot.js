@@ -19,15 +19,6 @@ API.on(API.USER_JOIN,function(userjoin){
 }
 )
 
-API.on(API.HISTORY_UPDATE,function(songm){
-  var songtm = API.getTimeRemaining();
-  if songtm>=7 {
-    API.sendChat(bot + " Sua musica é grande de mais!")
-    API.moderateForceSkip();
-  }
-}
-)
-
 API.on(API.CHAT, 
 function(cmd) {
   var id=cmd.uid;
