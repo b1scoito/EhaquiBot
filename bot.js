@@ -1,6 +1,6 @@
-var bot = '[STG Bot]'
-var vbot = '[STG Bot v1.0]'
-var author = 'GamerBolachaBR'
+bot = '[STG Bot]'
+vbot = '[STG Bot v1.0]'
+author = 'GamerBolachaBR'
 API.sendChat(vbot + "Bot iniciado com sucesso!")
 
 API.on(API.HISTORY_UPDATE,function(music){
