@@ -8,37 +8,50 @@ var media = API.getMedia();
 API.sendChat(bot + " Tocando:" + media.author + " - " + media.title)
 }
 
-function usrlv(userleave){
-  API.sendChat(bot + " O usuario:" +  userleave.username + " Deixou a sala!")
-}
-
 function usrjn(userjoin){
   API.sendChat(bot + " Bem-vindo(a) " + userjoin.username)
 }
 
 function cmds(cmd){
+  var comandos=true;
   var id=cmd.uid;
   var msg=cmd.message;
   var perm=API.getUser(id).role;
   if(msg=="!bot"){
+    if(comandos == true){
     API.sendChat(vbot + " Bot criado por" + autor)
+    }else{
+      API.senChat("Desculpe os comandos estão desabilitados")
+    }
   }
   if(msg=="!stg"){
-    API.sendChat(bot + " STG, Song To Going!") 
+    if(comandos == true){
+    API.sendChat(bot + " STG, Song To Going!")
+    }else{
+      API.senChat("Desculpe os comandos estão desabilitados")
+    }
   }
   if(msg=="!skip"){
+    if(comandos == true){
     if(perm >= 2){
       API.sendChat(bot + " Sua musica foi pulada!")
       API.moderateForceSkip();
     }else{
       API.sendChat(bot + " Permissão insuficiente!")
     }
+    }else{
+      API.senChat("Desculpe os comandos estão desabilitados")
+    }
+  }
+  if(msg=="!disablecmd"){
+    if(perm >= 1){
+      comandos=false;
+      API.sendChat("Os comandos estão desabilitados!")
+    }
   }
 }
-)
 
 
-API.on(API.USER_LEAVE,usrlv);
 API.on(API.HISTORY_UPDATE,msc);
 API.on(API.USER_JOIN,usrjn);
 API.on(API.CHAT,cmds);
