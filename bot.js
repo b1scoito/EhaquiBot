@@ -47,6 +47,8 @@ function cmds(cmd){
     if(perm >= 1){
       var comandos=false;
       API.sendChat("Os comandos estão desabilitados!")
+    }else{
+      API.sendChat("Você não tem permissão suficiente")
     }
   }
 }
