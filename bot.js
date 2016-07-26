@@ -13,7 +13,7 @@ function usrjn(userjoin){
 }
 
 function cmds(cmd){
-  var comandos=true;
+  comandos='true'
   var id=cmd.uid;
   var msg=cmd.message;
   var perm=API.getUser(id).role;
@@ -25,7 +25,7 @@ function cmds(cmd){
     }
   }
   if(msg=="!skip"){
-    if(comandos == true){
+    if(comandos == 'true'){
     if(perm >= 2){
       API.sendChat(bot + " Sua musica foi pulada!")
       API.moderateForceSkip();
@@ -38,7 +38,7 @@ function cmds(cmd){
   }
   if(msg=="!disablecmd"){
     if(perm >= 1){
-      var comandos=false;
+      comandos='false'
       API.sendChat("Os comandos estão desabilitados!")
     }else{
       API.sendChat("Você não tem permissão suficiente")
