@@ -37,7 +37,7 @@ function cmds(cmd){
   }
   if(msg=="!disablecmd"){
     if(perm >= 1){
-      API.sendChat("Os comandos estão desabilitados! " + comandos)
+      API.sendChat("Os comandos estão desabilitados!")
     }else{
       API.sendChat("Você não tem permissão suficiente")
     }
