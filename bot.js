@@ -1,3 +1,4 @@
+comandos = 'true'
 bot = '[Bolacha Bot]'
 vbot = '[Bolacha Bot v1.0]'
 autor = 'GamerBolachaBR'
@@ -13,12 +14,11 @@ function usrjn(userjoin){
 }
 
 function cmds(cmd){
-  comandos='true'
   var id=cmd.uid;
   var msg=cmd.message;
   var perm=API.getUser(id).role;
   if(msg=="!bot"){
-    if(comandos == true){
+    if(comandos == 'true'){
     API.sendChat(vbot + " Bot criado por " + autor)
     }else{
       API.senChat("Desculpe os comandos estão desabilitados")
@@ -38,7 +38,6 @@ function cmds(cmd){
   }
   if(msg=="!disablecmd"){
     if(perm >= 1){
-      comandos='false'
       API.sendChat("Os comandos estão desabilitados! " + comandos)
     }else{
       API.sendChat("Você não tem permissão suficiente")
