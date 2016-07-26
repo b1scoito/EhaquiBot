@@ -19,7 +19,7 @@ function cmds(cmd){
   var perm=API.getUser(id).role;
   if(msg=="!bot"){
     if(comandos == true){
-    API.sendChat(vbot + " Bot criado por" + autor)
+    API.sendChat(vbot + " Bot criado por " + autor)
     }else{
       API.senChat("Desculpe os comandos estão desabilitados")
     }
@@ -45,7 +45,7 @@ function cmds(cmd){
   }
   if(msg=="!disablecmd"){
     if(perm >= 1){
-      comandos=false;
+      var comandos=false;
       API.sendChat("Os comandos estão desabilitados!")
     }
   }
