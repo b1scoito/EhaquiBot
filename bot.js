@@ -24,13 +24,6 @@ function cmds(cmd){
       API.senChat("Desculpe os comandos estão desabilitados")
     }
   }
-  if(msg=="!stg"){
-    if(comandos == true){
-    API.sendChat(bot + " STG, Song To Going!")
-    }else{
-      API.senChat("Desculpe os comandos estão desabilitados")
-    }
-  }
   if(msg=="!skip"){
     if(comandos == true){
     if(perm >= 2){
