@@ -1,31 +1,27 @@
-bot = '[STG Bot]'
-vbot = '[STG Bot v1.0]'
-author = 'GamerBolachaBR'
+bot = '[Bolacha Bot]'
+vbot = '[Bolacha Bot v1.0]'
+autor = 'GamerBolachaBR'
 API.sendChat(vbot + "Bot iniciado com sucesso!")
 
-API.on(API.HISTORY_UPDATE,function(music){
+function msc(music){
 var media = API.getMedia();
 API.sendChat(bot + " Tocando:" + media.author + " - " + media.title)
 }
-)
 
-API.on(API.USER_LEAVE,function(userleave){
+function usrlv(userleave){
   API.sendChat(bot + " O usuario:" +  userleave.username + " Deixou a sala!")
 }
-)
 
-API.on(API.USER_JOIN,function(userjoin){
+function usrjn(userjoin){
   API.sendChat(bot + " Bem-vindo(a) " + userjoin.username)
 }
-)
 
-API.on(API.CHAT, 
-function(cmd) {
+function cmds(cmd){
   var id=cmd.uid;
   var msg=cmd.message;
   var perm=API.getUser(id).role;
   if(msg=="!bot"){
-    API.sendChat(vbot + " Bot criado por GamerBolachaBR")
+    API.sendChat(vbot + " Bot criado por" + autor)
   }
   if(msg=="!stg"){
     API.sendChat(bot + " STG, Song To Going!") 
@@ -40,3 +36,9 @@ function(cmd) {
   }
 }
 )
+
+
+API.on(API.USER_LEAVE,usrlv);
+API.on(API.HISTORY_UPDATE,msc);
+API.on(API.USER_JOIN,usrjn);
+API.on(API.CHAT,cmds);
