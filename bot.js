@@ -1,4 +1,3 @@
-comandos = 'true'
 bot = '[Bolacha Bot]'
 vbot = '[Bolacha Bot v1.0]'
 autor = 'GamerBolachaBR'
