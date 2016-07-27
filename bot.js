@@ -1,3 +1,4 @@
+comandos = 'false'
 bot = '[Bolacha Bot]'
 vbot = '[Bolacha Bot v1.0]'
 autor = 'GamerBolachaBR'
@@ -17,10 +18,15 @@ function cmds(cmd){
   var msg=cmd.message;
   var perm=API.getUser(id).role;
   if(msg=="!bot"){
-    if(comandos == 'true'){
+    if(comandos == 'false'){
     API.sendChat(vbot + " Bot criado por " + autor)
     }else{
       API.senChat("Desculpe os comandos estão desabilitados")
+    }
+  }
+  if(msg=="!Bolacha"){
+    if(comandos == 'false'){
+      API.sendChat(bot + " Bolacha >>> All")
     }
   }
   if(msg=="!skip"){
