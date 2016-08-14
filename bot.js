@@ -6,20 +6,23 @@ autor = 'GamerBolachaBR'
 API.sendChat(vbot + "Bot iniciado com sucesso!")
 
 function msc(music){
-  if(on==1){
+  if(on==0){
+  }else{
 var media = API.getMedia();
 API.sendChat(bot + " Tocando:" + media.author + " - " + media.title)
   }
 }
 
 function usrjn(userjoin){
-  if(on==1){
+  if(on==0){
+  }else{
   API.sendChat(bot + " Bem-vindo(a) " + userjoin.username)
   }
 }
 
 function cmds(cmd){
-  if(on==1){
+  if(on==0){
+  }else{
   var id=cmd.uid;
   var msg=cmd.message;
   var perm=API.getUser(id).role;
