@@ -1,5 +1,7 @@
+var on=1;
 bot = '[Bolacha Bot]'
-vbot = '[Bolacha Bot v1.0]'
+v = '1.5'
+vbot = '[Bolacha Bot v1.5]'
 autor = 'GamerBolachaBR'
 API.sendChat(vbot + "Bot iniciado com sucesso!")
 
@@ -30,12 +32,16 @@ function cmds(cmd){
       API.sendChat(bot + " Permissão insuficiente!")
     }
   }
+  if(msg=="!v"){
+    API.sendChat(v + " beta.")
+  }
+  if(msg=="!kill"){
+    on=0;
+  }
 }
 
-
+if(on == 1){
 API.on(API.HISTORY_UPDATE,msc);
 API.on(API.USER_JOIN,usrjn);
 API.on(API.CHAT,cmds);
-
-
-
+}
