@@ -33,7 +33,7 @@ function cmds(cmd){
     }
   }
   if(msg=="!v"){
-    API.sendChat(v + " beta.")
+    API.sendChat(bot + " " + v + " beta." + on)
   }
   if(msg=="!kill"){
     on=0;
