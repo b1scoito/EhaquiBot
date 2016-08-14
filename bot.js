@@ -39,7 +39,9 @@ function cmds(cmd){
     on=0;
   }
 }
-
+if(on===0){
+  API.sendChat(bot + " Bot desativado com sucesso!")
+}
 if(on===1){
 API.on(API.HISTORY_UPDATE,msc);
 API.on(API.USER_JOIN,usrjn);
