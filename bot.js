@@ -40,7 +40,7 @@ function cmds(cmd){
   }
 }
 
-if(on == 1){
+if(on===1){
 API.on(API.HISTORY_UPDATE,msc);
 API.on(API.USER_JOIN,usrjn);
 API.on(API.CHAT,cmds);
