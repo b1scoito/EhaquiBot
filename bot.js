@@ -41,7 +41,7 @@ function cmds(cmd){
     }
   }
   if(msg=="!v"){
-    API.sendChat(bot + " " + v + " beta." + on)
+    API.sendChat(bot + " " + v + " beta.")
   }
   if(msg=="!kill"){
     on=0;
