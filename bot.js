@@ -6,15 +6,20 @@ autor = 'GamerBolachaBR'
 API.sendChat(vbot + "Bot iniciado com sucesso!")
 
 function msc(music){
+  if(on==1){
 var media = API.getMedia();
 API.sendChat(bot + " Tocando:" + media.author + " - " + media.title)
+  }
 }
 
 function usrjn(userjoin){
+  if(on==1){
   API.sendChat(bot + " Bem-vindo(a) " + userjoin.username)
+  }
 }
 
 function cmds(cmd){
+  if(on==1){
   var id=cmd.uid;
   var msg=cmd.message;
   var perm=API.getUser(id).role;
@@ -38,12 +43,9 @@ function cmds(cmd){
   if(msg=="!kill"){
     on=0;
   }
+  }
 }
-if(on==0){
-  API.sendChat(bot + " Bot desativado com sucesso!")
-}
-if(on==1){
+
 API.on(API.HISTORY_UPDATE,msc);
 API.on(API.USER_JOIN,usrjn);
 API.on(API.CHAT,cmds);
-}
