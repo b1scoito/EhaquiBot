@@ -38,6 +38,9 @@ function cmds(cmd){
   if(msg=="!Jooj"){
     API.sendChat(bot + " Um bom jooj para você " + use.username + "!" )
   }
+  if(msg=="porra" or msg=="pora" or msg=="p0ra" or msg=="p0rra"){
+    API.sendChat("Olha a boca por favor, " + use.username)
+  }
   }
 
 API.on(API.HISTORY_UPDATE,msc);
