@@ -1,4 +1,3 @@
-var on=1;
 bot = '[Bolacha Bot]'
 v = '1.5'
 vbot = '[Bolacha Bot v1.5]'
@@ -6,26 +5,19 @@ autor = 'GamerBolachaBR'
 API.sendChat(vbot + "Bot iniciado com sucesso!")
 
 function msc(music){
-  if(on==0){
-  }else{
 var media = API.getMedia();
 API.sendChat(bot + " Tocando:" + media.author + " - " + media.title)
-  }
 }
 
 function usrjn(userjoin){
-  if(on==0){
-  }else{
   API.sendChat(bot + " Bem-vindo(a) " + userjoin.username)
-  }
 }
 
 function cmds(cmd){
-  if(on==0){
-  }else{
   var id=cmd.uid;
   var msg=cmd.message;
   var perm=API.getUser(id).role;
+  var use=API.getUser(id);
   if(msg=="!bot"){
     API.sendChat(vbot + " Bot criado por " + autor)
   }
@@ -43,11 +35,10 @@ function cmds(cmd){
   if(msg=="!v"){
     API.sendChat(bot + " " + v + " beta.")
   }
-  if(msg=="!kill"){
-    on=0;
+  if(msg=="!Jooj"){
+    API.sendChat(bot + " Um bom jooj para você " + use.username + "!" )
   }
   }
-}
 
 API.on(API.HISTORY_UPDATE,msc);
 API.on(API.USER_JOIN,usrjn);
