@@ -49,8 +49,8 @@ function cmds(cmd){
   }
  if(msg=="!comandos"){
       API.sendChat(bot + "!bot, !biscoito, !v, !jooj, !cookie, !boli, !bolacha ")
-   }
-   }  
+}
+}  
  
 API.on(API.HISTORY_UPDATE,msc);
 API.on(API.USER_JOIN,usrjn);
