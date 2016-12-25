@@ -1,7 +1,7 @@
-bot = '[Bolacha Bot]'
-v = '1.5'
-vbot = '[Bolacha Bot v1.5]'
-autor = 'GamerBolachaBR'
+bot = '[EhBalada Bot]'
+v = '2.0'
+vbot = '[EhBalada Bot v2.0]'
+autor = 'Biiscoitao'
 API.sendChat(vbot + "Bot iniciado com sucesso!")
 
 function msc(music){
@@ -10,7 +10,7 @@ API.sendChat(bot + " Tocando:" + media.author + " - " + media.title)
 }
 
 function usrjn(userjoin){
-  API.sendChat(bot + " Bem-vindo(a) " + userjoin.username)
+  API.sendChat(bot + " Seja bem-vindo(a) a Balada Ehaqui! " + userjoin.username)
 }
 
 function cmds(cmd){
@@ -21,8 +21,8 @@ function cmds(cmd){
   if(msg=="!bot"){
     API.sendChat(vbot + " Bot criado por " + autor)
   }
-  if(msg=="!Bolacha"){
-      API.sendChat(bot + " Bolacha >>> All")
+  if(msg=="!biscoito"){
+      API.sendChat(bot + " È Bolacha!")
   }
   if(msg=="!skip"){
     if(perm >= 2){
@@ -35,11 +35,16 @@ function cmds(cmd){
   if(msg=="!v"){
     API.sendChat(bot + " " + v + " beta.")
   }
-  if(msg=="!Jooj"){
+  if(msg=="!jooj"){
     API.sendChat(bot + " Um bom jooj para você " + use.username + "!" )
   }
+   if(msg=="!cookie"){
+      API.sendChat(bot + " Tome seu cookie!")
   }
-
+   if(msg=="!boli"){
+      API.sendChat(bot + " Boliiiiiiii!")
+  }
+  }
 API.on(API.HISTORY_UPDATE,msc);
 API.on(API.USER_JOIN,usrjn);
 API.on(API.CHAT,cmds);
