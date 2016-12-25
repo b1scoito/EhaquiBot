@@ -39,13 +39,18 @@ function cmds(cmd){
     API.sendChat(bot + " Um bom jooj para você " + use.username + "!" )
   }
    if(msg=="!cookie"){
-      API.sendChat(bot + " Tome seu cookie!")
+      API.sendChat(bot + " Tome seu cookie!" + use.username + "!" )
   }
    if(msg=="!boli"){
       API.sendChat(bot + " Boliiiiiiii!")
+  }
+ if(msg=="!bolacha"){
+      API.sendChat(bot + " È Biscoito!")
+ if(msg=="!comando"){
+      API.sendChat(bot + "!bot, !biscoito, !v, !jooj, !cookie, !boli, !bolacha ")
  }
  }
-
+ 
 API.on(API.HISTORY_UPDATE,msc);
 API.on(API.USER_JOIN,usrjn);
 API.on(API.CHAT,cmds);
