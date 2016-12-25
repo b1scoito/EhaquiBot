@@ -43,10 +43,9 @@ function cmds(cmd){
   }
    if(msg=="!boli"){
       API.sendChat(bot + " Boliiiiiiii!")
-  }
-  $("button").click(function(){
-    $.getScript("demo_ajax_script.js");
-});
+ }
+ }
+
 API.on(API.HISTORY_UPDATE,msc);
 API.on(API.USER_JOIN,usrjn);
 API.on(API.CHAT,cmds);
