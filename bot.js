@@ -48,7 +48,7 @@ function cmds(cmd){
       API.sendChat(bot + " È Biscoito!")
   }
  if(msg=="!comandos"){
-      API.sendChat(bot + "!bot, !biscoito, !v, !jooj, !cookie, !boli, !bolacha ")
+      API.sendChat(bot + "!bot, !biscoito, !v, !jooj, !cookie, !boli, !bolacha")
   }
   }
 
