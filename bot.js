@@ -49,7 +49,7 @@ function cmds(cmd){
   }   
    if(msg=="!chapolin"){
       API.sendChat(bot + " Não contavam com minha astúcia!")
-    
+  }  
  if(msg=="!comandos"){
       API.sendChat(bot + "!bot, !biscoito, !v, !jooj, !cookie, !boli, !bolacha")
   }
