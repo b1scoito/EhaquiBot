@@ -53,7 +53,7 @@ function cmds(cmd){
    if(msg=="!monstro"){
       API.sendChat(bot + " Birllll!")
   }   
-   if(msg=="!comandos"){f(msg=="!comandos"){
+   if(msg=="!comandos"){
       API.sendChat(bot + "!bot, !biscoito, !v, !jooj, !cookie, !boli, !bolacha")
   }
   }
