@@ -60,7 +60,10 @@ function cmds(cmd){
       API.sendChat(bot + " Eu sou seu pai")
   }   
    if(msg=="!ping"){
-      API.sendChat(bot + " pong!")     
+      API.sendChat(bot + " pong!")
+  }   
+   if(msg=="!musica"){
+      API.sendChat(bot + " Tocando:" + media.author + " - " + media.title)    
   }   
    if(msg=="!agua"){
       API.sendChat(bot + " Lava!")     
