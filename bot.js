@@ -64,9 +64,8 @@ function cmds(cmd){
   }   
    if(msg=="!musica"){
    var media = API.getMedia();
-API.sendChat(bot + " Tocando:" + media.author + " - " + media.title)    
-}
-  
+   API.sendChat(bot + " Tocando:" + media.author + " - " + media.title)    
+  }
    if(msg=="!agua"){
       API.sendChat(bot + " Lava!")     
   }   
