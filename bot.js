@@ -25,7 +25,7 @@ function cmds(cmd){
       API.sendChat(bot + " È Bolacha!")
   }
   if(msg=="!skip"){
-    if(perm >= 2){
+    if(perm >= 3){
       API.sendChat(bot + " Sua musica foi pulada!")
       API.moderateForceSkip();
     }else{
@@ -39,7 +39,7 @@ function cmds(cmd){
     API.sendChat(bot + " Um bom jooj para você " + use.username + "!" )
   }
    if(msg=="!cookie"){
-      API.sendChat(bot + " Tome seu cookie!" + use.username + "!" )
+      API.sendChat(bot + " Tome seu cookie! " + use.username + "!" )
   }
    if(msg=="!boli"){
       API.sendChat(bot + " Boliiiiiii")
@@ -57,7 +57,16 @@ function cmds(cmd){
       API.sendChat(bot + " Você destruiu meu ovo!")
   }   
    if(msg=="!ping"){
-      API.sendChat(bot + " pong!")     
+      API.sendChat(bot + " pong!")
+  }   
+   if(msg=="!lag"){
+      API.sendChat(bot + " O ehaqui tem lag, esse bot não e.e")     
+  }
+   if(msg=="!fogo"){
+      API.sendChat(bot + " Tá pegando fogo bicho!")   
+  }   
+   if(msg=="!FUSRODAH"){
+      API.sendChat(bot + " DAHROFUS!")        
   }   
    if(msg=="!comandos"){
       API.sendChat(bot + "!bot, !biscoito, !v, !jooj, !cookie, !boli, !bolacha")
