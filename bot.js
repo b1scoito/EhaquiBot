@@ -59,6 +59,9 @@ function cmds(cmd){
    if(msg=="!ping"){
       API.sendChat(bot + " pong!")
   }   
+   if(msg=="!agua"){
+      API.sendChat(bot + " Lava!")     
+  }   
    if(msg=="!lag"){
       API.sendChat(bot + " O ehaqui tem lag, esse bot não e.e")     
   }
