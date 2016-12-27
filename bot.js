@@ -59,6 +59,9 @@ function cmds(cmd){
    if(msg=="!darth"){
       API.sendChat(bot + " Eu sou seu pai")
   }   
+   if(msg=="!lava"){
+      API.sendChat(bot + " agua!")     
+  }   
    if(msg=="!ping"){
       API.sendChat(bot + " pong!")
   }   
