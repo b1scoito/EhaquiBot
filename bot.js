@@ -53,6 +53,9 @@ function cmds(cmd){
    if(msg=="!monstro"){
       API.sendChat(bot + " Birllll!")
   }   
+   if(msg=="!site"){
+      API.sendChat(bot + " http://ehbalada.webnode.com/")     
+  }   
    if(msg=="!ovo"){
       API.sendChat(bot + " Você destruiu meu ovo!")
   }   
