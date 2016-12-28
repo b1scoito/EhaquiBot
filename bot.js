@@ -72,7 +72,10 @@ function cmds(cmd){
       API.sendChat(bot + " Te quiero @ " + use.username + "!" )
   }   
    if(msg=="!ping"){
-      API.sendChat(bot + " pong!")     
+      API.sendChat(bot + " pong!")
+  }   
+   if(msg=="!pao"){
+      API.sendChat(bot + " E morreu.")     
   }   
    if(msg=="!peça"){
       API.sendChat(bot + " È essa peça que você queria " + use.username + "?" )  
@@ -103,7 +106,7 @@ function cmds(cmd){
       API.sendChat(bot + " DAHROFUS!")        
   }   
    if(msg=="!comandos"){
-      API.sendChat(bot + "!bot, !biscoito, !v, !jooj, !cookie, !boli, !bolacha, !chapolin, !monstro, !ovo, !darth, !lava, !ping, !musica, !agua, !lag, !fogo, !FUSROHDAH, !jailson, !cafe, !peppa, !pingu, !peça")
+      API.sendChat(bot + "!bot, !biscoito, !v, !jooj, !cookie, !boli, !bolacha, !chapolin, !monstro, !ovo, !darth, !lava, !ping, !musica, !agua, !lag, !fogo, !FUSROHDAH, !jailson, !cafe, !peppa, !pingu, !peça, !ponei, !pao")
   }
   }
 
