@@ -68,8 +68,11 @@ function cmds(cmd){
    if(msg=="!cafe"){
       API.sendChat(bot + " QUERO CAFÈ! " + use.username + "!" )
   }   
+   if(msg=="!ponei"){
+      API.sendChat(bot + " Te quiero @ " + use.username + "!" )
+  }   
    if(msg=="!ping"){
-      API.sendChat(bot + " pong!")
+      API.sendChat(bot + " pong!")     
   }   
    if(msg=="!peça"){
       API.sendChat(bot + " È essa peça que você queria " + use.username + "?" )  
