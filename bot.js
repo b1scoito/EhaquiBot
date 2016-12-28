@@ -65,8 +65,20 @@ function cmds(cmd){
    if(msg=="!lava"){
       API.sendChat(bot + " agua!")     
   }   
+   if(msg=="!cafe"){
+      API.sendChat(bot + " QUERO CAFÈ! " + use.username + "!" )
+  }   
    if(msg=="!ping"){
       API.sendChat(bot + " pong!")
+  }    
+   if(msg=="!pingu"){
+      API.sendChat(bot + use.username + " È um penguim anão "     
+  }   
+   if(msg=="!peppa"){
+      API.sendChat(bot + " BACON!!!")      
+  }  
+   if(msg=="!jailson"){
+      API.sendChat(bot + " QUE DELICIA " + use.username + "!" )     
   }   
    if(msg=="!musica"){
    var media = API.getMedia();
@@ -85,7 +97,7 @@ function cmds(cmd){
       API.sendChat(bot + " DAHROFUS!")        
   }   
    if(msg=="!comandos"){
-      API.sendChat(bot + "!bot, !biscoito, !v, !jooj, !cookie, !boli, !bolacha, !chapolin, !monstro, !ovo, !darth, !lava, !ping, !musica, !agua, !lag, !fogo, FUSROHDAH")
+      API.sendChat(bot + "!bot, !biscoito, !v, !jooj, !cookie, !boli, !bolacha, !chapolin, !monstro, !ovo, !darth, !lava, !ping, !musica, !agua, !lag, !fogo, !FUSROHDAH, !jailson, !cafe, !peppa, !pingu")
   }
   }
 
