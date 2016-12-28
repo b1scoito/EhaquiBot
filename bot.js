@@ -75,7 +75,7 @@ function cmds(cmd){
       API.sendChat(bot + " È essa peça que você queria? " + use.username + "!" )  
   }    
    if(msg=="!pingu"){
-      API.sendChat(bot + use.username + " È um penguim anão ")     
+      API.sendChat(bot + use.username + " È um penguim anão " )     
   }   
    if(msg=="!peppa"){
       API.sendChat(bot + " BACON!!!")      
@@ -100,7 +100,7 @@ function cmds(cmd){
       API.sendChat(bot + " DAHROFUS!")        
   }   
    if(msg=="!comandos"){
-      API.sendChat(bot + "!bot, !biscoito, !v, !jooj, !cookie, !boli, !bolacha, !chapolin, !monstro, !ovo, !darth, !lava, !ping, !musica, !agua, !lag, !fogo, !FUSROHDAH, !jailson, !cafe, !peppa, !pingu")
+      API.sendChat(bot + "!bot, !biscoito, !v, !jooj, !cookie, !boli, !bolacha, !chapolin, !monstro, !ovo, !darth, !lava, !ping, !musica, !agua, !lag, !fogo, !FUSROHDAH, !jailson, !cafe, !peppa, !pingu, !peça")
   }
   }
 
