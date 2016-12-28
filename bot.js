@@ -70,9 +70,12 @@ function cmds(cmd){
   }   
    if(msg=="!ping"){
       API.sendChat(bot + " pong!")
+  }   
+   if(msg=="!peça"){
+      API.sendChat(bot + " È essa peça que você queria? " + use.username + "!" )  
   }    
    if(msg=="!pingu"){
-      API.sendChat(bot + use.username + " È um penguim anão "     
+      API.sendChat(bot + use.username + " È um penguim anão ")     
   }   
    if(msg=="!peppa"){
       API.sendChat(bot + " BACON!!!")      
