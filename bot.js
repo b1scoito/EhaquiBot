@@ -24,7 +24,7 @@ function cmds(cmd){
   if(msg=="!biscoito"){
       API.sendChat(bot + " È Bolacha!")
   }
-  if(msg=="!skip"){
+  if(msg=="!pular"){
     if(perm >= 3){
       API.sendChat(bot + " Sua musica foi pulada!")
       API.moderateForceSkip();
