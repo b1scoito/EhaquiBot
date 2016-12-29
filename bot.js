@@ -12,11 +12,6 @@ API.sendChat(bot + " Tocando:" + media.author + " - " + media.title)
 function usrjn(userjoin){
   API.sendChat(bot + " Seja bem-vindo(a) a Balada Ehaqui! " + userjoin.username)
 }
-
-API.on(API.USER_LEAVE, callback);
-function callback(user){
-    API.sendChat(bot + user.username + " Saiu da sala!");
-}
 function cmds(cmd){
   var id=cmd.uid;
   var msg=cmd.message;
@@ -117,4 +112,4 @@ function cmds(cmd){
 API.on(API.HISTORY_UPDATE,msc);
 API.on(API.USER_JOIN,usrjn);
 API.on(API.CHAT,cmds);
-API.USER_LEAVE
+
