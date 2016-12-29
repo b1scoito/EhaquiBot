@@ -15,7 +15,7 @@ function usrjn(userjoin){
 
 API.on(API.USER_LEAVE, callback);
 function callback(user){
-    alert(user.username + " Saiu da sala!");
+    API.sendChat(bot + user.username + " Saiu da sala!");
 }
 function cmds(cmd){
   var id=cmd.uid;
