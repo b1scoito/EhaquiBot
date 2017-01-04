@@ -1,5 +1,5 @@
 bot = '[EhBalada Bot]'
-v = '2.0'
+v = '2.5'
 vbot = '[EhBalada Bot v2.0]'
 autor = 'Biiscoitao'
 API.sendChat(vbot + "Bot iniciado com sucesso!")
@@ -72,6 +72,12 @@ function cmds(cmd){
   }   
    if(msg=="!ping"){
       API.sendChat(bot + " pong!")
+  }   
+   if(msg=="!pong"){
+      API.sendChat(bot + " ping!")     
+  }   
+   if(msg=="!forninho"){
+      API.sendChat(bot + " O Forninho caiu!")     
   }   
    if(msg=="!pao"){
       API.sendChat(bot + " E morreu")     
