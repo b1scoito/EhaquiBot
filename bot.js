@@ -102,7 +102,10 @@ function cmds(cmd){
    API.sendChat(bot + " Tocando:" + media.author + " - " + media.title)    
   }
    if(msg=="!agua"){
-      API.sendChat(bot + " Lava!")     
+      API.sendChat(bot + " Lava!")
+  }  
+   if(msg=="!autowoot"){
+      API.sendChat(bot + " http://pastebin.com/gyzZHU8R")          
   }   
    if(msg=="!lag"){
       API.sendChat(bot + " O ehaqui tem lag, esse bot não e.e")     
