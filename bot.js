@@ -62,7 +62,10 @@ function cmds(cmd){
       API.sendChat(bot + " Eu sou seu pai")
   }   
    if(msg=="!lava"){
-      API.sendChat(bot + " agua!")     
+      API.sendChat(bot + " agua!")
+  }   
+   if(msg=="!autowoot"){
+      API.sendChat(bot + " http://pastebin.com/gyzZHU8R")      
   }   
    if(msg=="!cafe"){
       API.sendChat(bot + " QUERO CAFÈ! " + use.username + "!" )
