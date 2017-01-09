@@ -43,11 +43,10 @@ function cmds(cmd){
    if(msg=="!boli"){
       API.sendChat(bot + " Boliiiiiii")   
   }
-  if(msg=="!warn" + API.getUser
- "username"){
-    if(perm >= 1){
-      API.sendChat(API.getUser
-"username" + "Você foi avisado!")
+  if(msg=="!ban" )
+     API.moderateBanUser(username, duration){
+    if(perm >= 2){
+      API.sendChat(bot + "Hm.... Alguem foi banido! ")
     }else{
       API.sendChat(bot + " Permissão insuficiente!")
     }
@@ -133,5 +132,5 @@ function cmds(cmd){
 API.on(API.HISTORY_UPDATE,msc);
 API.on(API.USER_JOIN,usrjn);
 API.on(API.CHAT,cmds);
-API.getUser
-
+API.getUser(username)
+API.moderateBanUser(userID, duration)
