@@ -1,6 +1,6 @@
-bot = '[EhBalada Bot]'
-v = '2.5'
-vbot = '[EhBalada Bot v2.0]'
+bot = '[Events² Bot]'
+v = '3.0'
+vbot = '[Events² Bot 3.0]'
 autor = 'Biiscoitao'
 API.sendChat(vbot + "Bot iniciado com sucesso!")
 
@@ -10,7 +10,7 @@ API.sendChat(bot + " Tocando:" + media.author + " - " + media.title)
 }
 
 function usrjn(userjoin){
-  API.sendChat(bot + " Seja bem-vindo(a) a Balada Ehaqui! " + userjoin.username)
+  API.sendChat(bot + " Seja bem-vindo(a) a o Plugdj Events²! " + userjoin.username)
 }
 function cmds(cmd){
   var id=cmd.uid;
@@ -42,6 +42,9 @@ function cmds(cmd){
   }
    if(msg=="!boli"){
       API.sendChat(bot + " Boliiiiiii")
+  }   
+   if(msg=="!warn " + use.username
+      API.sendChat(bot + " Você foi avisado " + use.username + "!" )  
   }                 
    if(msg=="!bolacha"){
       API.sendChat(bot + " È Biscoito!")
