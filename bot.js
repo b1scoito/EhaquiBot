@@ -43,9 +43,11 @@ function cmds(cmd){
    if(msg=="!boli"){
       API.sendChat(bot + " Boliiiiiii")   
   }
-  if(msg=="!warn" + "username"){
+  if(msg=="!warn" + API.getUser
+ "username"){
     if(perm >= 1){
-      API.sendChat("username" + "Você foi avisado!")
+      API.sendChat(API.getUser
+"username" + "Você foi avisado!")
     }else{
       API.sendChat(bot + " Permissão insuficiente!")
     }
