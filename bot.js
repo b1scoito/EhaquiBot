@@ -124,5 +124,3 @@ function cmds(cmd){
 API.on(API.HISTORY_UPDATE,msc);
 API.on(API.USER_JOIN,usrjn);
 API.on(API.CHAT,cmds);
-API.getUser(username)
-API.moderateBanUser(userID, duration)
