@@ -41,10 +41,14 @@ function cmds(cmd){
       API.sendChat(bot + " Tome seu cookie! " + use.username + "!" )
   }
    if(msg=="!boli"){
-      API.sendChat(bot + " Boliiiiiii")
-  }   
-   if(msg=="!warn " + "username" )
-      API.sendChat(bot + " Você foi avisado " + use.username + "!" )  
+      API.sendChat(bot + " Boliiiiiii")   
+  }
+  if(msg=="!warn" + "username"){
+    if(perm >= 1){
+      API.sendChat("username" + "Você foi avisado!")
+    }else{
+      API.sendChat(bot + " Permissão insuficiente!")
+    }
   }                 
    if(msg=="!bolacha"){
       API.sendChat(bot + " È Biscoito!")
