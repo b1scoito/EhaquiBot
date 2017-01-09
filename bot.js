@@ -43,7 +43,7 @@ function cmds(cmd){
    if(msg=="!boli"){
       API.sendChat(bot + " Boliiiiiii")
   }   
-   if(msg=="!warn " + use.username)
+   if(msg=="!warn " + "username" )
       API.sendChat(bot + " Você foi avisado " + use.username + "!" )  
   }                 
    if(msg=="!bolacha"){
@@ -127,4 +127,5 @@ function cmds(cmd){
 API.on(API.HISTORY_UPDATE,msc);
 API.on(API.USER_JOIN,usrjn);
 API.on(API.CHAT,cmds);
+API.getUser
 
