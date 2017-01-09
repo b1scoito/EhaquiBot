@@ -43,7 +43,7 @@ function cmds(cmd){
    if(msg=="!boli"){
       API.sendChat(bot + " Boliiiiiii")
   }   
-   if(msg=="!warn " + use.username
+   if(msg=="!warn " + use.username){
       API.sendChat(bot + " Você foi avisado " + use.username + "!" )  
   }                 
    if(msg=="!bolacha"){
