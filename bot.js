@@ -64,6 +64,9 @@ function cmds(cmd){
    if(msg=="!lava"){
       API.sendChat(bot + " agua!")
   }   
+   if(msg=="!kpop"){
+      API.sendChat(bot + " 몬스타엑스 Quer dizer gostei desse!")     
+  }   
    if(msg=="!autowoot"){
       API.sendChat(bot + " http://pastebin.com/gyzZHU8R")      
   }   
