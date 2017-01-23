@@ -24,7 +24,7 @@ function cmds(cmd){
       API.sendChat(bot + " È Bolacha!")
   }
   if(msg=="!pular"){
-    if(perm >= 0){
+    if(perm >= 3){
       API.sendChat(bot + " Sua musica foi pulada!")
       API.moderateForceSkip();
     }else{
