@@ -1,6 +1,6 @@
-bot = '[Eha-Aqui Bot]'
+bot = '[Eh-Aqui Bot]'
 v = '3.5'
-vbot = '[Eha-Aqui Bot 3.5]'
+vbot = '[Eh-Aqui Bot 3.5]'
 autor = 'Biiscoitao'
 API.sendChat(vbot + "Bot iniciado com sucesso!")
 
@@ -10,7 +10,7 @@ API.sendChat(bot + " Tocando:" + media.author + " - " + media.title)
 }
 
 function usrjn(userjoin){
-  API.sendChat(bot + " Seja bem-vindo(a) a o Plugdj Eha-Aqui! " + userjoin.username)
+  API.sendChat(bot + " Seja bem-vindo(a) a o Plugdj Eh-Aqui! " + userjoin.username)
 }
 function cmds(cmd){
   var id=cmd.uid;
