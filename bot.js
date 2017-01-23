@@ -1,6 +1,6 @@
-bot = '[Events² Bot]'
-v = '3.0'
-vbot = '[Events² Bot 3.0]'
+bot = '[Eha-Aqui Bot]'
+v = '3.5'
+vbot = '[Eha-Aqui Bot 3.5]'
 autor = 'Biiscoitao'
 API.sendChat(vbot + "Bot iniciado com sucesso!")
 
@@ -10,7 +10,7 @@ API.sendChat(bot + " Tocando:" + media.author + " - " + media.title)
 }
 
 function usrjn(userjoin){
-  API.sendChat(bot + " Seja bem-vindo(a) a o Plugdj Events²! " + userjoin.username)
+  API.sendChat(bot + " Seja bem-vindo(a) a o Plugdj Eha-Aqui! " + userjoin.username)
 }
 function cmds(cmd){
   var id=cmd.uid;
@@ -24,7 +24,7 @@ function cmds(cmd){
       API.sendChat(bot + " È Bolacha!")
   }
   if(msg=="!pular"){
-    if(perm >= 3){
+    if(perm >= 2){
       API.sendChat(bot + " Sua musica foi pulada!")
       API.moderateForceSkip();
     }else{
@@ -53,7 +53,7 @@ function cmds(cmd){
       API.sendChat(bot + " Birllll!")
   }   
    if(msg=="!site"){
-      API.sendChat(bot + " http://ehbalada.webnode.com/")     
+      API.sendChat(bot + " http://ehaqui.com")     
   }   
    if(msg=="!ovo"){
       API.sendChat(bot + " Você destruiu meu ovo!")
