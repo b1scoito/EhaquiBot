@@ -1,6 +1,6 @@
-bot = '[Eh-Aqui Bot]'
-v = '3.5'
-vbot = '[Eh-Aqui Bot 3.5]'
+bot = '[Casaverde Bot]'
+v = '4.0'
+vbot = '[Casaverde Bot 4.0]'
 autor = 'Biiscoitao'
 API.sendChat(vbot + "Bot iniciado com sucesso!")
 
@@ -10,7 +10,7 @@ API.sendChat(bot + " Tocando:" + media.author + " - " + media.title)
 }
 
 function usrjn(userjoin){
-  API.sendChat(bot + " Seja bem-vindo(a) a o Plugdj Eh-Aqui! " + userjoin.username)
+  API.sendChat(bot + " Seja bem-vindo(a) a o Plugdj Casaverde! " + userjoin.username)
 }
 function cmds(cmd){
   var id=cmd.uid;
@@ -24,7 +24,7 @@ function cmds(cmd){
       API.sendChat(bot + " È Bolacha!")
   }
   if(msg=="!pular"){
-    if(perm >= 3){
+    if(perm >= 2){
       API.sendChat(bot + " Sua musica foi pulada!")
       API.moderateForceSkip();
     }else{
@@ -53,7 +53,7 @@ function cmds(cmd){
       API.sendChat(bot + " Birllll!")
   }   
    if(msg=="!site"){
-      API.sendChat(bot + " http://ehaqui.com")     
+      API.sendChat(bot + " http://casaverdeehaqui.weebly.com/regras-plug-dj.html")     
   }   
    if(msg=="!ovo"){
       API.sendChat(bot + " Você destruiu meu ovo!")
@@ -120,7 +120,7 @@ function cmds(cmd){
       API.sendChat(bot + " DAHROFUS!")        
   }   
    if(msg=="!comandos"){
-      API.sendChat(bot + "!bot, !biscoito, !v, !jooj, !cookie, !boli, !bolacha, !chapolin, !monstro, !ovo, !darth, !lava, !ping, !musica, !agua, !lag, !fogo, !FUSROHDAH, !jailson, !cafe, !peppa, !pingu, !peça, !ponei, !pao")
+      API.sendChat(bot + "!bot, !biscoito, !v, !jooj, !cookie, !boli, !bolacha, !chapolin, !monstro, !ovo, !darth, !lava, !ping, !musica, !agua, !lag, !fogo, !FUSROHDAH, !jailson, !cafe, !peppa, !pingu, !peça, !ponei, !pao, !kpop, autowoot")
   }
   }
 
