@@ -1,6 +1,6 @@
-bot = '[Events² Bot]'
+bot = '[Ehaqui Bot]'
 v = '4.5'
-vbot = '[Events² Bot 5.0]'
+vbot = '[Ehaqui Bot 5.0]'
 autor = 'Biiscoitao'
 API.sendChat(vbot + " Bot iniciado com sucesso!")
 
@@ -10,7 +10,7 @@ API.sendChat(bot + " Tocando:" + media.author + " - " + media.title)
 }
 
 function usrjn(userjoin){
-  API.sendChat(bot + " Seja bem-vindo(a) a o Plugdj Events²! " + userjoin.username)
+  API.sendChat(bot + " Seja bem-vindo(a) a o Plugdj Ehaqui! " + userjoin.username)
 }
 function cmds(cmd){
   var id=cmd.uid;
@@ -56,7 +56,7 @@ function cmds(cmd){
       API.sendChat(bot + " redtube.com Seu punheteiro do crlh")
   }   
    if(msg=="!site"){
-      API.sendChat(bot + " http://casaverdeehaqui.weebly.com/regras-plug-dj.html")     
+      API.sendChat(bot + " ehaqui.com")     
   }   
    if(msg=="!ovo"){
       API.sendChat(bot + " Você destruiu meu ovo!")
