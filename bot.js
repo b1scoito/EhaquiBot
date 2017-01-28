@@ -81,6 +81,12 @@ function cmds(cmd){
   }   
    if(msg=="!pong"){
       API.sendChat(bot + " ping!")     
+  } 
+    if(msg=="!temdecarne"){
+      API.sendChat(bot + " Hm? Hm? Hm?!")
+  } 
+      if(msg=="!edelinguiça"){
+      API.sendChat(bot + " HM HM HM HM HM!")      
   }   
    if(msg=="!forninho"){
       API.sendChat(bot + " O Forninho caiu!")     
