@@ -1,6 +1,6 @@
 bot = '[Brothers Bot]'
-v = '4.0'
-vbot = '[Brothers Bot 4.0]'
+v = '4.5'
+vbot = '[Brothers Bot 4.5]'
 autor = 'Biiscoitao'
 API.sendChat(vbot + "Bot iniciado com sucesso!")
 
