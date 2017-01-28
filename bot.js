@@ -88,7 +88,7 @@ function cmds(cmd){
     if(msg=="!temdecarne"){
       API.sendChat(bot + " Hm? Hm? Hm?!")
   } 
-      if(msg=="!edelinguiça"){
+     if(msg=="!edelinguiça"){
       API.sendChat(bot + " HM HM HM HM HM!")      
   }   
    if(msg=="!forninho"){
