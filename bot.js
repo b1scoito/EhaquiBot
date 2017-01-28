@@ -2,7 +2,7 @@ bot = '[Events² Bot]'
 v = '4.5'
 vbot = '[Events² Bot 5.0]'
 autor = 'Biiscoitao'
-API.sendChat(vbot + "Bot iniciado com sucesso!")
+API.sendChat(vbot + " Bot iniciado com sucesso!")
 
 function msc(music){
 var media = API.getMedia();
