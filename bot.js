@@ -52,6 +52,9 @@ function cmds(cmd){
    if(msg=="!monstro"){
       API.sendChat(bot + " Birllll!")
   }   
+   if(msg=="!porno"){
+      API.sendChat(bot + " redtube.com Seu punheteiro do crlh")
+  }   
    if(msg=="!site"){
       API.sendChat(bot + " http://casaverdeehaqui.weebly.com/regras-plug-dj.html")     
   }   
