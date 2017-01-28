@@ -1,6 +1,6 @@
-bot = '[Casaverde Bot]'
+bot = '[Brothers Bot]'
 v = '4.0'
-vbot = '[Casaverde Bot 4.0]'
+vbot = '[Brothers Bot 4.0]'
 autor = 'Biiscoitao'
 API.sendChat(vbot + "Bot iniciado com sucesso!")
 
@@ -10,7 +10,7 @@ API.sendChat(bot + " Tocando:" + media.author + " - " + media.title)
 }
 
 function usrjn(userjoin){
-  API.sendChat(bot + " Seja bem-vindo(a) a o Plugdj Casaverde! " + userjoin.username)
+  API.sendChat(bot + " Seja bem-vindo(a) a o Plugdj brothers! " + userjoin.username)
 }
 function cmds(cmd){
   var id=cmd.uid;
