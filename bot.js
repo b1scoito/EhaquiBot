@@ -41,7 +41,10 @@ function cmds(cmd){
       API.sendChat(bot + " Tome seu cookie! " + use.username + "!" )
   }
    if(msg=="!boli"){
-      API.sendChat(bot + " Boliiiiiii") 
+      API.sendChat(bot + " Boliiiiiii")
+  }  
+   if(msg=="!pimba"){
+      API.sendChat(bot + " Cachaça pimba feat: DavaJonas")      
   }                 
    if(msg=="!bolacha"){
       API.sendChat(bot + " È Biscoito!")
