@@ -40,6 +40,14 @@ function cmds(cmd){
    if(msg=="!cookie"){
       API.sendChat(bot + " Tome seu cookie! " + use.username + "!" )
   }
+    if(msg=="!mutar"){
+    if(perm >= 2){
+      API.sendChat(bot + " Sua musica foi pulada!")
+      API.moderateMuteUser(userID, reason, duration)();
+    }else{
+      API.sendChat(bot + " Permissão insuficiente!")
+    }
+  }   
    if(msg=="!boli"){
       API.sendChat(bot + " Boliiiiiii")
   }  
@@ -139,3 +147,4 @@ function cmds(cmd){
 API.on(API.HISTORY_UPDATE,msc);
 API.on(API.USER_JOIN,usrjn);
 API.on(API.CHAT,cmds);
+API.moderateMuteUser(userID, reason, duration)
