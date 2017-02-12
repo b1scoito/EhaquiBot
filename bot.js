@@ -39,14 +39,6 @@ function cmds(cmd){
   }
    if(msg=="!cookie"){
       API.sendChat(bot + " Tome seu cookie! " + use.username + "!" )
-  }
-    if(msg=="!mutar"){API.moderateMuteUser(userID, reason, duration)}
-    if(perm >= 2){
-      API.sendChat(bot + " O jogador foi mutado!!")
-      API.moderateMuteUser(userID, reason, duration)
-    }else{
-      API.sendChat(bot + " Permissão insuficiente!")
-    }
   }   
    if(msg=="!boli"){
       API.sendChat(bot + " Boliiiiiii")
